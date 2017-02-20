@@ -1,10 +1,10 @@
 package tyut.second.rectangle;
 
 public class Point {
-	//modify start
+	//add start
 	public int x;
 	public int y;
-	//modify end
+	//add end
 	
 	public Point(int x,int y){
 		this.x = x;

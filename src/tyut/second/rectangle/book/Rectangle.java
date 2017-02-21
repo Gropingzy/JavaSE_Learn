@@ -13,6 +13,12 @@ public class Rectangle {
 		this.point2 = new Point(x2,y2);
 	}
 	
+	//习题2-9追加
+	public Rectangle(Point p1, double length, double width, int xForward, int yForward){
+		this.point1 = new Point(p1.getX(), p1.getY());
+		this.point2 = new Point(p1.getX() + xForward * length, p1.getY() + yForward * width);
+	}
+	
 	public double getCircumference(){
 		return 2 * Math.abs(point1.getX() - point2.getX()) + 2 * Math.abs(point1.getY() - point2.getY());
 	}

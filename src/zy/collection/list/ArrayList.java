@@ -1,7 +1,7 @@
 package zy.collection.list;
 
 public class ArrayList {
-	
+	private int size = 0;
 	private Object[] elementData = new Object[10];
 	
 	public void add(Object obj){
@@ -13,10 +13,19 @@ public class ArrayList {
 	}
 	
 	public Object get(int index){
-		return null;
+		if(index > -1){
+			return elementData[index];
+		}else{
+			return null;
+		}
 	} 
 	
 	public Object remove(int index){
 		return null;
 	}
+	
+	public int size(){
+		return size; 
+	}
+	
 }
